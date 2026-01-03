@@ -8,7 +8,7 @@ A machine information report used at [United States Graphics Company](https://x.
 
 <img src="https://github.com/usgraphics/TR-100/assets/8161031/2a8412dd-09de-45ff-8dfb-e5c6b6f19212" width="500" />
 
-‼️*** WARNING ***‼️
+️*** WARNING ***️
 
 Alpha release, only compatible with Debian systems with ZFS root partition running as `root` user. This is not ready for public use *at all*. But you should totally try to use it. The worst that's going to happen is it'll destroy your system. Your help is appreciated in making this project production worthy.
 
@@ -23,7 +23,7 @@ ENCOURAGE USERS TO DIRECTLY EDIT THE SOURCE
 
 When you build a templating engine, a config file, a bunch of switches, etc; it adds 1) bloat 2) complexity 3) limits customization because by definition, customization template engine is going to be less featureful than the source code itself. So let the users just edit the source. Keep it well organized.
 
-Another consideration is to avoid abstracting the source code at the expense of direct 1:1 readability. For e.g., the section "Machine Report" at the end of the bash script prints the output using `printf`—a whole bunch load of `printf` statements. There is no need to add loops or functions returning functions. What you see is roughly what will print. 1:1 mapping is important here for visual ID.
+Another consideration is to avoid abstracting the source code at the expense of direct 1:1 readability. For e.g., the section "Machine Report" at the end of the bash script prints the output using `printf` - a whole bunch load of `printf` statements. There is no need to add loops or functions returning functions. What you see is roughly what will print. 1:1 mapping is important here for visual ID.
 
 # Design Philosophy
 Tabular, short, clear and concise. The tool's job is to inform the user of the current state of the system they are logging in or are operating. No emojis (except for the one used as a warning sign). No colors (as default, might add an option to add colors).
@@ -58,4 +58,4 @@ fi
 ```
 
 # License
-BSD 3 Clause License, Copyright © 2024, U.S. Graphics, LLC. See [`LICENSE`](https://github.com/usgraphics/machine-report-staging/blob/master/LICENSE) file for license information.
+BSD 3 Clause License, Copyright 2024, U.S. Graphics, LLC. See [`LICENSE`](https://github.com/usgraphics/machine-report-staging/blob/master/LICENSE) file for license information.
